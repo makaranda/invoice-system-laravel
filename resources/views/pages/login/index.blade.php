@@ -1,5 +1,6 @@
 @extends('layouts.login')
 @section('content')
+<span id="loading_response" class="col-12 d-none"><div class="textloading col-12">Processing......</div></span>
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center">
@@ -11,7 +12,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="login-wrap p-0">
 
-              <form action="#" class="signin-form">
+              <form action="#" class="signin-form" id="loginForm">
                   <div class="form-group">
                       <input type="text" class="form-control" placeholder="Username" required>
                   </div>
@@ -34,5 +35,13 @@
 
 @endpush
 @push('scripts')
+    <script>
+        $(document).ready(function(){
+            $('#loginForm').on('click',function(e){
+                e.preventDefault();
 
+                //alert();
+            });
+        });
+    </script>
 @endpush
