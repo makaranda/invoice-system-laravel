@@ -8,7 +8,7 @@
         @include('libraries.login.styles')
     @stack('css')
 </head>
-<body>
+<body class="img js-fullheight" style="background-image: url({{ asset('public/assets/login/images/bg.jpg') }});">
     @yield('content')
         @include('libraries.login.scripts')
     @stack('scripts')

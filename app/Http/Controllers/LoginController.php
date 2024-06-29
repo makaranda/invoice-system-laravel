@@ -6,6 +6,6 @@ class LoginController extends Controller
 {
     public function login()
     {
-        return view('pages.login.welcome');
+        return view('pages.login.index');
     }
 }
