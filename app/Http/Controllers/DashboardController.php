@@ -13,4 +13,6 @@ class DashboardController extends Controller
     {
         return view('pages.dashboard.users.home');
     }
+
+
 }

@@ -25,37 +25,112 @@
             <div class="ecommerce-widget">
 
                 <div class="row justify-content-center">
+                    <div class="col-12 col-md-12">
+                        <div class="nav nav-fill mb-4 mt-4">
+                            <label for="" class="nav-link shadow-sm step-lists step0 border ml-2">
+                              Step One
+                            </label>
+                            <label for="" class="nav-link shadow-sm step-lists step1 border ml-2">
+                              Step Two
+                            </label>
+                            <label for="" class="nav-link shadow-sm step-lists step2 border ml-2">
+                              Step Three
+                            </label>
+                         </div>
+                    </div>
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 
                         <div class="card">
                             <h5 class="card-header">Invoice Module</h5>
                             <div class="card-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="inputText3" class="col-form-label">Input Text</label>
-                                        <input id="inputText3" type="text" class="form-control">
+                                <form method="POST" class="employee-form" action="">
+
+
+                                    <div class="form-section">
+                                        <input type="text" name="products_array"/>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="inputText3" class="col-form-label">Search Products</label>
+                                                    <select class="form-control select_product" name="select_product">
+                                                        <option value="aaaaa">aaaaaa</option>
+                                                        <option value="bbbbbb">bbbbbb</option>
+                                                    </select>
+                                                </div></div>
+                                            <div class="col-12 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="inputText3" class="col-form-label">Product qty</label>
+                                                    <input type="number" class="form-control" name="product_qty">
+                                                </div></div>
+                                            <div class="col-12 col-md-3 align-self-center">
+                                                <button type="button" class="btn btn-success btn-sm mt-4 add_product">Add Product</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead class="bg-light">
+                                                        <tr class="border-0">
+                                                            <th class="border-0">Product Code</th>
+                                                            <th class="border-0">Product Name</th>
+                                                            <th class="border-0">Quantity</th>
+                                                            <th class="border-0">Unit Price</th>
+                                                            <th class="border-0">Value</th>
+                                                            <th class="border-0">Sub Total</th>
+                                                            <th class="border-0">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Product #1 </td>
+                                                            <td>id000001 </td>
+                                                            <td>20</td>
+                                                            <td>$80.00</td>
+                                                            <td>27-08-2018 01:22:12</td>
+                                                            <td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="inputEmail">Email address</label>
-                                        <input id="inputEmail" type="email" placeholder="name@example.com" class="form-control">
-                                        <p>We'll never share your email with anyone else.</p>
+
+                                    <div class="form-section">
+                                        <div class="form-group">
+                                            <label for="inputText3" class="col-form-label">Customer Name</label>
+                                            <input id="inputText3" type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail">Email address</label>
+                                            <input id="inputEmail" type="email" placeholder="name@example.com" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputText4" class="col-form-label">Phone</label>
+                                            <input id="inputText4" type="text" class="form-control" placeholder="Phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress">Address</label>
+                                            <input id="inputAddress" type="text" placeholder="Address" class="form-control">
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="inputText4" class="col-form-label">Number Input</label>
-                                        <input id="inputText4" type="number" class="form-control" placeholder="Numbers">
+
+
+                                    <div class="form-section">
+                                        <div class="mb-3 mt-3">
+                                        <label for="address" class="form-label">Address:</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Enter address" name="address" required>
+                                        </div>
+                                        <div class="mb-3">
+                                        <label for="website" class="form-label">Website:</label>
+                                        <input type="text" class="form-control" id="website" placeholder="Enter website" name="website" required>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword">Password</label>
-                                        <input id="inputPassword" type="password" placeholder="Password" class="form-control">
-                                    </div>
-                                    <div class="custom-file mb-3">
-                                        <input type="file" class="custom-file-input" id="customFile">
-                                        <label class="custom-file-label" for="customFile">File Input</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
+                                    <div class="form-navigation mt-3">
+                                        <button type="button" class="previous btn btn-warning float-left">Previous</button>
+                                        <button type="button" class="next btn btn-primary float-right">Next</button>
+                                        <button type="submit" class="btn btn-primary float-right">Submit</button>
+                                     </div>
                                 </form>
                             </div>
 
@@ -70,18 +145,45 @@
     </div>
 @endsection
 @push('css')
-    <style>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-    </style>
+<style>
+    .form-section{
+      display: none;
+    }
+    .form-section.current{
+      display: inline;
+    }
+    .parsley-errors-list{
+      color: red;
+    }
+    .nav-fill label{
+        align-self: center;
+        margin-bottom: 0px;
+    }
+    .select2-container {
+        box-sizing: border-box;
+        display: block;
+        margin: 0;
+        position: relative;
+        vertical-align: middle;
+    }
+  </style>
 @endpush
 
 @push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-    // $(document).ready(function(){
-    //   alert();
-    //  });
+    $(document).ready(function(){
+        $('.select_product').select2();
+
+        $('.add_product').on('click',function(){
+
+        });
+     });
 
     $(function(){
       var $sections=$('.form-section');
